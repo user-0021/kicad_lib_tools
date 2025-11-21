@@ -39,12 +39,12 @@ class AutoSelectCSVMergerApp(TkinterDnD.Tk):
         frame_top.pack(pady=15, fill='x', padx=20)
 
         # 集計列（値）の選択
-        tk.Label(frame_top, text="集計列 (数量等):", bg="#f0f0f0").grid(row=0, column=2, sticky="w", padx=(10,0))
+        tk.Label(frame_top, text="集計列 (数量等):", bg="#f0f0f0").grid(row=0, column=0, sticky="w", padx=(10,0))
         self.combo_val = ttk.Combobox(frame_top, width=20, state="readonly")
         self.combo_val.grid(row=0, column=1, padx=5)
 
         # 基準列（キー）の選択
-        tk.Label(frame_top, text="基準列 (型番等):", bg="#f0f0f0").grid(row=0, column=0, sticky="w")
+        tk.Label(frame_top, text="基準列 (型番等):", bg="#f0f0f0").grid(row=0, column=2, sticky="w")
         self.combo_key = ttk.Combobox(frame_top, width=20, state="readonly")
         self.combo_key.grid(row=0, column=3, padx=5)
 
